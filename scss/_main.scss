@@ -1,0 +1,133 @@
+body {
+    //background-color: $black;
+    color: $black;
+    margin: 0px;
+    padding: 0px;  
+    background: url(files/mount_diablo.jpg);
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100%;
+    background-color: $mid_blue;
+}
+
+.block_separator {
+    height: 2px;
+    width: 100%;
+    background-color: $darker_blue;
+}
+
+.info_block {
+    height: 400px;
+    width: 100%;
+    //padding-top: 10px;
+    //padding-bottom: 10px;
+    //put the different subclasses for each component under here, instead of extending
+}
+
+.inner_block {
+    height: 0.8*$block_height;
+    width: 0.7*$block_width;
+    background-color: green;
+    position: relative;
+    @include center(0px);
+    top: ($block_height - 0.8*$block_height)/2;
+}
+
+.career_block {
+    @extend .info_block;
+    background-color: white;
+
+    #first_block {
+        background-color: $gray;
+    }
+
+    #second_block {
+        background-color: $gray;
+    }
+
+    #third_block {
+        background-color: $gray;
+    }
+
+    #fourth_block {
+        background-color: $gray;
+    }
+
+}
+
+.involvement_block {
+    @extend .info_block;
+}
+
+.project_block {
+    @extend .info_block;
+}
+
+.content_holder_left {
+    height: 0.8*$block_height;
+    //background-color: red;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.content_holder_right {
+    @extend .content_holder_left;
+    float: right;
+    //background-color: green;
+}
+
+//These are the IDs
+#workday_logo {
+    width: 80%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#salesforce_logo {
+    width: 75%;
+    height: auto;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+#box_logo {
+    width: 70%;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 75px;
+}
+
+#ms_logo {
+    width: 85%;
+    height: auto;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.description {
+    font-family: Roboto;
+    font-weight: 300;
+    color: $black;
+
+    p.title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    } 
+
+    p.meta_data {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }   
+}
