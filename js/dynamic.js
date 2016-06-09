@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 		$("#work_experience").hide();
 		$("#projects").hide();
-		$("involvement").hide();
+		$("#involvement").hide();
 		$(view).fadeIn(400); //400milliseconds
 	};
 
