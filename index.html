@@ -8,6 +8,8 @@
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="css/font-awesome.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/dynamic.js"></script>
     </head>
     <body>
         <header>
@@ -31,14 +33,14 @@
                     </p> -->
                 </div>
                 <div class="main_tabs">
-                    <div id="first_tab">Work Experience
-                    </div><a href="involvement.html"><div id="second_tab">Involvement
-                    </div></a><a href="projects.html"><div id="third_tab">Projects
+                    <div class="clicked" id="first_tab">Work Experience
+                    </div><div class="not_clicked" id="second_tab">Involvement
+                    </div><div class="not_clicked" id="third_tab">Projects
                     </div></a>
                 </div>  
             </div> 
         </header>
-        <main>
+        <main id="work_experience">
             <div class="career_block">
                 <div class="inner_block" id="first_block">
                     <div class="content_holder_left">
@@ -123,9 +125,178 @@
                 </div>
             </div>
         </main>
+        <main id="involvement">
+            <div class="career_block">
+                <div class="inner_block" id="first_block">
+                    <div class="content_holder_left">
+                        <img src="files/workday_logo.png" id="workday_logo"/>
+                    </div>
+                    <div class="content_holder_right description">
+                        <p style="font-size: 20px" class="title">Involvement<p>
+                        <p class="meta_data">Pleasanton, CA | May 2016 - Present</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="second_block">
+                    <div class="content_holder_right">
+                        <img src="files/salesforce_logo.svg" id="salesforce_logo"/>
+                    </div>
+                    <div class="content_holder_left description">
+                        <p style="font-size: 20px" class="title">Product Management Intern<p>
+                        <p class="meta_data">San Francisco, CA | May 2015 - August 2016</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="third_block">
+                    <div class="content_holder_left">
+                        <img src="files/box_logo.png" id="box_logo"/>
+                    </div>
+                    <div class="content_holder_right description">
+                        <p style="font-size: 20px" class="title">Operations and Analytics Intern<p>
+                        <p class="meta_data">Los Altos, CA | June 2014 - August 2014</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="fourth_block">
+                    <div class="content_holder_right">
+                        <img src="files/ms_logo.png" id="ms_logo"/>
+                    </div>
+                    <div class="content_holder_left description">
+                        <p style="font-size: 20px" class="title">Private Wealth Management Intern<p>
+                        <p class="meta_data">San Francisco, CA | May 2013 - August 2013</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="projects">
+            <div class="career_block">
+                <div class="inner_block" id="first_block">
+                    <div class="content_holder_left">
+                        <img src="files/workday_logo.png" id="workday_logo"/>
+                    </div>
+                    <div class="content_holder_right description">
+                        <p style="font-size: 20px" class="title">Projects<p>
+                        <p class="meta_data">Pleasanton, CA | May 2016 - Present</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="second_block">
+                    <div class="content_holder_right">
+                        <img src="files/salesforce_logo.svg" id="salesforce_logo"/>
+                    </div>
+                    <div class="content_holder_left description">
+                        <p style="font-size: 20px" class="title">Product Management Intern<p>
+                        <p class="meta_data">San Francisco, CA | May 2015 - August 2016</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="third_block">
+                    <div class="content_holder_left">
+                        <img src="files/box_logo.png" id="box_logo"/>
+                    </div>
+                    <div class="content_holder_right description">
+                        <p style="font-size: 20px" class="title">Operations and Analytics Intern<p>
+                        <p class="meta_data">Los Altos, CA | June 2014 - August 2014</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_separator"></div>
+            <div class="career_block">
+                <div class="inner_block" id="fourth_block">
+                    <div class="content_holder_right">
+                        <img src="files/ms_logo.png" id="ms_logo"/>
+                    </div>
+                    <div class="content_holder_left description">
+                        <p style="font-size: 20px" class="title">Private Wealth Management Intern<p>
+                        <p class="meta_data">San Francisco, CA | May 2013 - August 2013</p>
+                        <p>This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                           This is description. This is description. This is description.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer>
             Site Map
         </footer>
-        
     </body>
 </html>

@@ -2239,7 +2239,8 @@ p {
 
 main {
   width: 100%;
-  background-color: #007CA5; }
+  background-color: #007CA5;
+  height: 1600px; }
 
 .block_separator {
   height: 2px;
@@ -2367,23 +2368,17 @@ header {
     line-height: 50px;
     font-size: 20px;
     color: #00171F; }
-  header div.main_tabs #first_tab {
+  header div.main_tabs .clicked {
     background-color: #FFFFFF;
-    transition: background-color 0.5s ease; }
-  header div.main_tabs #first_tab:hover {
-    background-color: #FFFFFF; }
-  header div.main_tabs #second_tab {
+    transition: background-color 0.4s;
+    color: #00171F; }
+  header div.main_tabs .not_clicked {
     background-color: #003459;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.4s;
     color: #FFFFFF; }
-  header div.main_tabs #second_tab:hover {
-    background-color: #007CA5; }
-  header div.main_tabs #third_tab {
-    background-color: #003459;
-    transition: background-color 0.5s ease;
-    color: #FFFFFF; }
-  header div.main_tabs #third_tab:hover {
-    background-color: #007CA5; }
+  header div.main_tabs .not_clicked:hover {
+    background-color: #007CA5;
+    cursor: pointer; }
 
 footer {
   height: 70px;

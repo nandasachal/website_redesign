@@ -74,30 +74,45 @@ header {
             color: $black;
         }
 
-        #first_tab {
-            background-color: $white;
-            transition: background-color 0.5s ease;
-        }
-        #first_tab:hover {
-            background-color: $white;
-        }
+        // #first_tab {
+        //     background-color: $white;
+        //     transition: background-color 0.5s ease;
+        // }
+        // #first_tab:hover {
+        //     background-color: $white;
+        // }
 
-        #second_tab {
+        // #second_tab {
+        //     background-color: $darker_blue;
+        //     transition: background-color 0.5s ease;
+        //     color: $white;
+        // }
+        // #second_tab:hover {
+        //     background-color: $mid_blue;
+        // }
+
+        // #third_tab {
+        //     background-color: $darker_blue;
+        //     transition: background-color 0.5s ease;
+        //     color: $white;
+        // }
+        // #third_tab:hover {
+        //     background-color: $mid_blue;
+        // }
+        
+        .clicked {
+            background-color: $white;
+            transition: background-color 0.4s;
+            color: $black;    
+        }
+        .not_clicked {
             background-color: $darker_blue;
-            transition: background-color 0.5s ease;
+            transition: background-color 0.4s;
             color: $white;
         }
-        #second_tab:hover {
+        .not_clicked:hover {
             background-color: $mid_blue;
-        }
-
-        #third_tab {
-            background-color: $darker_blue;
-            transition: background-color 0.5s ease;
-            color: $white;
-        }
-        #third_tab:hover {
-            background-color: $mid_blue;
+            cursor: pointer;
         }
     }
 }
