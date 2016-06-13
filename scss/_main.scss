@@ -14,7 +14,7 @@ p {
 main {
     width: 100%;
     background-color: $mid_blue;
-    height: $block_height*4;
+    //height: $block_height*7;
 }
 
 .block_separator {
@@ -33,32 +33,32 @@ main {
     //hello again
 }
 
-.inner_block {
-    height: 0.8*$block_height;
-    width: 0.7*$block_width;
-    background-color: green;
-    position: relative;
-    @include center(0px);
-    top: ($block_height - 0.8*$block_height)/2;
-}
-
 .career_block {
     @extend .info_block;
     background-color: white;
 
-    #first_block {
-        background-color: $gray;
-    }
+    // #first_block {
+    //     background-color: $gray;
+    // }
 
-    #second_block {
-        background-color: $gray;
-    }
+    // #second_block {
+    //     background-color: $gray;
+    // }
 
-    #third_block {
-        background-color: $gray;
-    }
+    // #third_block {
+    //     background-color: $gray;
+    // }
 
-    #fourth_block {
+    // #fourth_block {
+    //     background-color: $gray;
+    // }
+    .inner_block {
+        height: 0.8*$block_height;
+        width: 0.7*$block_width;
+        background-color: green;
+        position: relative;
+        @include center(0px);
+        top: ($block_height - 0.8*$block_height)/2;
         background-color: $gray;
     }
 
@@ -86,35 +86,6 @@ main {
     //background-color: green;
 }
 
-//These are the IDs
-#workday_logo {
-    width: 80%;
-    height: auto;
-    margin-top: 25px;
-    margin-left: 50px;
-}
-
-#salesforce_logo {
-    width: 75%;
-    height: auto;
-    margin-top: 45px;
-    margin-left: 50px;
-}
-
-#box_logo {
-    width: 70%;
-    height: auto;
-    margin-top: 60px;
-    margin-left: 75px;
-}
-
-#ms_logo {
-    width: 85%;
-    height: auto;
-    margin-top: 35px;
-    margin-left: 15px;
-}
-
 .description {
     font-family: Roboto;
     font-weight: 300;
@@ -123,6 +94,7 @@ main {
     p.title {
         margin-top: 30px;
         margin-bottom: 10px;
+        font-size: 20px;
     } 
 
     p.meta_data {

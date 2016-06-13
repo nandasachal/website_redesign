@@ -2239,8 +2239,7 @@ p {
 
 main {
   width: 100%;
-  background-color: #007CA5;
-  height: 1600px; }
+  background-color: #007CA5; }
 
 .block_separator {
   height: 2px;
@@ -2251,26 +2250,18 @@ main {
   height: 400px;
   width: 100%; }
 
-.inner_block {
-  height: 320px;
-  width: 70%;
-  background-color: green;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  margin-top: 0px;
-  top: 40px; }
-
 .career_block {
   background-color: white; }
-  .career_block #first_block {
-    background-color: #D3D3D3; }
-  .career_block #second_block {
-    background-color: #D3D3D3; }
-  .career_block #third_block {
-    background-color: #D3D3D3; }
-  .career_block #fourth_block {
+  .career_block .inner_block {
+    height: 320px;
+    width: 70%;
+    background-color: green;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 0px;
+    top: 40px;
     background-color: #D3D3D3; }
 
 .content_holder_left, .content_holder_right {
@@ -2281,37 +2272,14 @@ main {
 .content_holder_right {
   float: right; }
 
-#workday_logo {
-  width: 80%;
-  height: auto;
-  margin-top: 25px;
-  margin-left: 50px; }
-
-#salesforce_logo {
-  width: 75%;
-  height: auto;
-  margin-top: 45px;
-  margin-left: 50px; }
-
-#box_logo {
-  width: 70%;
-  height: auto;
-  margin-top: 60px;
-  margin-left: 75px; }
-
-#ms_logo {
-  width: 85%;
-  height: auto;
-  margin-top: 35px;
-  margin-left: 15px; }
-
 .description {
   font-family: Roboto;
   font-weight: 300;
   color: #00171F; }
   .description p.title {
     margin-top: 30px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 20px; }
   .description p.meta_data {
     margin-bottom: 10px; }
   .description p {
@@ -2390,5 +2358,83 @@ footer {
   font-weight: 300;
   text-align: center;
   line-height: 70px; }
+
+#workday_logo {
+  width: 80%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: 50px; }
+
+#salesforce_logo {
+  width: 75%;
+  height: auto;
+  margin-top: 45px;
+  margin-left: 35px; }
+
+#dropbox_logo {
+  width: 90%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 30px; }
+
+#box_logo {
+  width: 70%;
+  height: auto;
+  margin-top: 60px;
+  margin-left: 35px; }
+
+#zynga_logo {
+  width: 90%;
+  height: auto;
+  margin-top: 110px;
+  margin-left: 35px; }
+
+#eventbrite_logo {
+  width: 80%;
+  height: auto;
+  margin-top: 105px;
+  margin-left: 25px; }
+
+#ms_logo {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 15px; }
+
+#bc_logo {
+  width: 60%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 100px; }
+
+#club_golf_logo {
+  width: 65%;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 50px; }
+
+#dx_logo {
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 60px; }
+
+#wordlike_logo {
+  width: 60%;
+  height: auto;
+  margin-top: 35px;
+  margin-left: 100px; }
+
+#somewear_logo {
+  width: 90%;
+  height: auto;
+  margin-top: 85px;
+  margin-left: -10px; }
+
+#boxhub_logo {
+  width: 90%;
+  height: auto;
+  margin-top: 95px;
+  margin-left: 35px; }
 
 /*# sourceMappingURL=font-awesome.css.map */
